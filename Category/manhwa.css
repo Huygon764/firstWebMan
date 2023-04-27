@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+}
+/*header */
+.header {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.frm_header {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-left: auto;
+}
+.frm_header input {
+    width: 300px;
+    border: none;
+    outline: none;
+}
+.frm_header button {
+    border:none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: none;
+}
+.frm_header button:hover {
+    opacity: 0.3;
+}
+#icon_light {
+    font-size: 20px;
+    margin-left: 10px;
+    cursor:pointer;
+}
+.icon_cart {
+    color: black;
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.log_in {
+    background-color: rgb(49, 196, 141);
+    border-radius: 50px;
+}
+.log_in a {
+    display:block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+/* navigation */
+.nav {
+    width: 100%;
+    padding: 0 10%;
+    background-color: #282A35;
+}
+.menu li {
+    display: inline-block;
+    cursor: pointer;
+    border-right: 1px solid rgb(255, 255, 255, 0.5);
+    margin-left: -4px;
+}
+.menu li a {
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+    padding: 12px 15px 13px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.category {
+    position: relative;
+}
+.sub_category {
+    position: absolute;
+    left: 0;
+    display: none;
+}
+.menu li .sub_category a {
+    background-color: #282A35;
+    padding: 5px 10px;
+    line-height: 25px;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+.menu li:hover {
+    background-color: black;
+}
+.menu li:hover .sub_category {
+    display: block;
+}
+.menu li .sub_category a:hover {
+    background-color: black;
+}
+/* wrapper of content and aside */
+.container_main {
+    width: 100%;
+    padding: 0 10vw;
+    background-color: #e4e4e4;
+}
+.content_aside {
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0;
+    background-color: white;
+}
+/* content */
+.content {
+    width: 70%;
+    background-color: white;
+    padding: 0 15px;
+}
+.home a{
+    color: #2980b9;
+    text-decoration: none;
+    font-size: 18px;
+}
+#arrow::before {
+    content: "\00BB";
+    padding: 0 5px;
+    color: #E4E4E4;
+}
+.home a:hover {
+    text-decoration: underline;
+    color: #ae4ad9;
+}
+.item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,calc(25% - 15px));
+    grid-gap: 15px;
+    margin-top: 10px;
+}
+.grid_content {
+    background-color: #E4E4E4;
+}
+.grid_content img {
+    width: 100%;
+    height: 210px;
+    border-radius: 5px;
+}
+.grid_content h3 {
+    max-width: 160px;
+}
+.name_darkmode {
+    text-decoration: none;
+    color: black;
+}
+.container_price {
+    margin: 3px 0 10px;
+}
+.grid_content .price {
+    color: #b00;
+}
+.grid_content .old_price {
+    color: gray;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+/* aside */
+.aside {
+    width: 30%;
+    background-color: white;
+    padding: 0 15px;
+}
+.frame_top5 {
+    border: 1px solid black;
+    padding: 10px;
+}
+.frame_top5 > p {
+    font-family: Tahoma,Helvetica,Arial;
+    color: #2980b9;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.frame li {
+    border-bottom: 1px solid #dedede;
+    height: 80px;
+    margin-bottom: 5px;
+    padding: 5px 0;
+    list-style-type: none;
+}
+.name_darkmode {
+    text-decoration: none;
+    color: black;
+}
+.frame img {
+    width: 50px;
+    height: 70px;
+    float: left;
+}
+.item_aside {
+    margin-left: 60px;
+}
+.avalable_item_aside {
+    color: red;
+    margin-top: 30px;
+    font-weight: 500;
+}
+.top1 {
+    border-top: 1px solid #dedede;
+}
+.frame .top5 {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    background-color: #222222;
+    color: white;
+    padding: 10px 10%;
+    text-align: center;
+}
+
+/* darkmode*/
+.dark {
+    background-color: #252525;
+}
+
+.white {
+    color: white;
+}
+.background_content {
+    background-color: #1a1a1a;
+}
+.background_nav {
+    background-color: #222222;
+}
+.border_white {
+    border: 1px solid white;
+}

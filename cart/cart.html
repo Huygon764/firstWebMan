@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Your cart</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='cart.css'>
+    <script src="https://kit.fontawesome.com/3a121e5c2d.js" crossorigin="anonymous"></script>
+    <script src="cart.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <a class="logo" href="/main.html">
+                <img src="/Image/Manbo.jpg" style="width:100px;" alt="logo" />
+            </a>
+            <form class="frm_header">
+                <div class="search_header">
+                    <input type="text" placeholder="Tìm truyện" />
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </form>
+            <i id="icon_light" class="fa-solid fa-lightbulb" onclick="darkmode()"></i>
+            <a class="icon_cart" href="/cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="log_in">
+                <a href="/Login/signin.html">Đăng nhập</a>
+            </div>
+        </div>
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="/main.html"><i class="fa-solid fa-house"></i></a></li>
+                <li class="category"><a href="">Thể loại
+                        <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="sub_category">
+                        <a class="man" href="/Category/manga.html">Manga</a>
+                        <a class="man" href="/Category/manhua.html">Manhua</a>
+                        <a class="man" href="/Category/manhwa.html">Manhwa</a>
+                    </div>
+                </li>
+                <li><a href="">Yêu thích</a></li>
+                <li><a href="/cart/cart.html">Giỏ hàng</a></li>
+                <li><a href="/AboutUs/aboutUs.html">Về tớ</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        </div>
+
+        <div class="container_main">
+            <div class="content">
+
+                <div class="home">
+                    <span><a href="/main.html">Trang chủ</a>
+                        <span id="arrow"></span>
+                        <a href="cart.html">Giỏ hàng</a>
+                    </span>
+                </div>
+
+                <div class="product_sum">
+
+                    <div class="sample_product">
+                        <span class="product">Sản phẩm</span>
+                        <span class="price">Đơn giá</span>
+                        <span class="quantity">Số lượng</span>
+                        <span class="sum">Tổng tiền</span>
+                    </div>
+
+                    <div class="product_added">
+
+                        <div class="product1">
+
+                            <div class="product_real">
+                                <a href="/Detail/onepiece.html"><img src="/Image/OnePiece.jpg" /></a>
+                                <div class="content_man">
+                                    <h2><a href="/Detail/onepiece.html" class="name_cart">One piece</a></h2>
+                                    <p class="describeMan">Truyện kể về cuộc hành trình của Monkey D. Luffy...</p>
+                                </div>
+                            </div>
+
+                            <div class="price_real">
+                                <span>999.000</span>
+
+                            </div>
+
+                            <div class="quantity_real">
+                                <button type="button" class="btn_plus" id="btn_plus_id" onclick=plusQuantityOnepiece()>+
+                                </button>
+                                <span class="quantity_changable" id="quantity_changable_id">0</span>
+                                <button type="button" class="btn_minus" id="btn_minus_id" onclick=minusQuantityOnepiece()>-
+                                </button>
+
+                            </div>
+
+                            <div class="sum_real">
+                                <p id="sum_real_id_onepiece">0</p>
+                            </div>
+                        </div>
+
+                        <div class="product1">
+
+                            <div class="product_real">
+                                <a href="#"><img src="/Image/AttackOnTitan.jpg" /></a>
+                                <div class="content_man">
+                                    <h2><a href="#" class="name_cart">Attack On Titan</a></h2>
+                                    <p class="describeMan">Cốt truyện theo chân Eren Yeager, một thiếu niên...</p>
+                                </div>
+                            </div>
+
+                            <div class="price_real">
+                                <span>999.000</span>
+
+                            </div>
+
+                            <div class="quantity_real">
+                                <button type="button" class="btn_plus" id="btn_plus_id" onclick=plusQuantityAOT()>+
+                                </button>
+                                <span class="quantity_changable" id="quantity_changable_id_aot">0</span>
+                                <button type="button" class="btn_minus" id="btn_minus_id" onclick=minusQuantityAOT()>-
+                                </button>
+
+                            </div>
+
+                            <div class="sum_real">
+                                <p id="sum_real_id_aot">0</p>
+                            </div>
+                        </div>
+
+                        <div class="product1">
+
+                            <div class="product_real">
+                                <a href="#"><img src="/Image/OnePunchMan.jpg" /></a>
+                                <div class="content_man">
+                                    <h2><a href="#" class="name_cart">One Punch Man</a></h2>
+                                    <p class="describeMan">Xoay quanh một siêu anh hùng tên là Saitama, anh... </p>
+                                </div>
+                            </div>
+
+                            <div class="price_real">
+                                <span>199.000</span>
+
+                            </div>
+
+                            <div class="quantity_real">
+                                <button type="button" class="btn_plus" id="btn_plus_id" onclick=plusQuantityOPM()>+
+                                </button>
+                                <span class="quantity_changable" id="quantity_changable_id_opm">0</span>
+                                <button type="button" class="btn_minus" id="btn_minus_id" onclick=minusQuantityOPM()>-
+                                </button>
+
+                            </div>
+
+                            <div class="sum_real">
+                                <p id="sum_real_id_opm">0</p>
+                            </div>
+                        </div>
+
+                        <div class="order">
+                            <p >Tổng tiền: <span id="sum_order_money">0</span> <span><button class="name_cart" onclick="window.alert('Đặt hàng thành công')">Đặt hàng</button></span></p>
+                            <button class="count_sum" onclick="countSum()">TÍnh tổng tiền</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright © by Bo</p>
+            <p>Tên: BoH - Tuổi: 18</p>
+            <p>Mọi thắc mắc, thông tin xin liên hệ qua mail: huygon764@gmail.com</p>
+        </div>
+    </div>
+</body>
+
+</html>

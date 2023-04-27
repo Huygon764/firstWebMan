@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>One piece</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='onepiece.css'>
+    <script src="https://kit.fontawesome.com/3a121e5c2d.js" crossorigin="anonymous"></script>
+    <script src="/main.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <a class="logo" href="/main.html">
+                <img src="/Image/Manbo.jpg" style="width:100px;" alt="logo" />
+            </a>
+            <form class="frm_header">
+                <div class="search_header">
+                    <input type="text" placeholder="Tìm truyện" />
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </form>
+            <i id="icon_light" class="fa-solid fa-lightbulb" onclick="darkmode()">
+            </i>
+            <a class="icon_cart" href="/cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="log_in">
+                <a href="/Login/signin.html">Đăng nhập</a>
+            </div>
+        </div>
+        <div class="nav" id="nav_id">
+            <ul class="menu">
+                <li><a href="/main.html"><i class="fa-solid fa-house"></i></a></li>
+                <li class="category"><a href="">Thể loại
+                        <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="sub_category">
+                        <a class="man" href="/Category/manga.html">Manga</a>
+                        <a class="man" href="/Category/manhua.html">Manhua</a>
+                        <a class="man" href="/Category/manhwa.html">Manhwa</a>
+                    </div>
+                </li>
+                <li><a href="">Yêu thích</a></li>
+                <li><a href="/cart/cart.html">Giỏ hàng</a></li>
+                <li><a href="/AboutUs/aboutUs.html">Về tớ</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        </div>
+
+        <div class="container_main" >
+            <div class="content_aside" >
+
+                <div class="content">
+                    <div class="home">
+                        <span><a href="/main.html">Trang chủ</a>
+                            <span id="arrow"></span>
+                            <a href="onepiece.html">One piece </a>
+                        </span>
+                    </div>
+
+                    <div class="name_darkmode">
+                        <h1 class="name_product">One piece</h1>
+                        <div class="detail_product">
+                            <div class="img_product">
+                                <img src="/Image/OnePiece.jpg"/>
+                            </div>
+
+                            <div class="infor_product">
+                                <table class="table_infor_product">
+                                    <tr>
+                                        <td>Tác giả</td>
+                                        <td>Oda Eiichiro</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tình trạng</td>
+                                        <td class="infor_product_detail">Còn hàng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Đã bán</td>
+                                        <td class="infor_product_detail">1000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Xếp hạng</td>
+                                        <td  class="infor_product_detail">1</td>
+                                    </tr>
+                                    <tr>
+                                         <td><button><a href="/cart/cart.html" class= "btn_buy">Mua hàng</a></button></td>
+                                        <td><button class="infor_product_detail" onclick="window.alert('Đã thêm vào giỏ hàng')">Thêm vào giỏ</button></td>
+                                    </tr>   
+                                </table>
+                            </div>
+
+                        </div>
+                        <div class="content_product">
+                            <h3>Nội dung</h3>
+                            <p>
+                                Truyện kể về Monkey D. Luffy, 1 cậu bé rất thích hải tặc có ước mơ tìm được kho báu One
+                                Piece và
+                                trở thành Vua hải tặc - Pirate King. Lúc nhỏ, Luffy tình cờ ăn phải trái quỉ (Devil
+                                Fruit) Gomu Gomu,
+                                nó cho cơ thể cậu khả năng co dãn đàn hồi như cao su nhưng đổi lại cậu sẽ không bao giờ
+                                biết bơi.
+                                Sau đó Luffy lại được Shank cứu thoát tuy nhiên ông ta bị mất 1 cánh tay. Sau đấy Shank
+                                chia tay Luffy và
+                                để lại cho cậu cái mũ rơm (Straw Hat) và nói rằng: "Sau này bao giờ thành cướp biển hãy
+                                gặp ta và trả lại
+                                nó". Chính lời nói này đã thúc đầy Luffy trở thành 1 cướp biển thật sự.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="aside">
+                    <div class="frame_top5">
+                        <p>Bestseller</p>
+                        <ul class="frame">
+                            <li class="top1">
+                                <a href="/Detail/manga/onepiece.html"><img src="/Image/OnePiece.jpg"></a>
+                                <div class="item_aside">
+                                    <h4><a href="/Detail/manga/onepiece.html" class="name_darkmode">One piece</a></h4>
+                                    <h4 class="avalable_item_aside">Còn hàng</h4>
+                               </div>
+                            </li>
+                            <li>
+                                <a href="/Detail/manhwa/soloLeveling.html"><img src="/Image/SoloLeveling.jpg"></a>
+                                <div class="item_aside">
+                                    <h4><a href="/Detail/manhwa/soloLeveling.html" class="name_darkmode">Solo leveling</a></h4>
+                                    <h4 class="avalable_item_aside">Còn hàng</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="/Detail/manga/aot.html"><img src="/Image/AttackOnTitan.jpg"></a>
+                                <div class="item_aside">
+                                    <h4><a href="/Detail/manga/aot.html" class="name_darkmode">Attack on titan</a></h4>
+                                    <h4 class="avalable_item_aside">Còn hàng</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="/Detail/manga/naruto.html"><img src="/Image/Naruto.jpg"></a>
+                                <div class="item_aside">
+                                    <h4><a href="/Detail/manga/naruto.html" class="name_darkmode">Naruto</a></h4>
+                                    <h4 class="avalable_item_aside">Còn hàng</h4>
+                                </div>
+                            </li>
+                            <li class="top5">
+                                <a href="/Detail/manga/death.html"><img src="/Image/DeathNote.jpg"></a>
+                                <div class="item_aside">
+                                    <h4><a href="/Detail/manga/death.html" class="name_darkmode">Death Note</a></h4>
+                                    <h4 class="avalable_item_aside">Còn hàng</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>       
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright © by Bo</p>
+            <p>Tên: BoH - Tuổi: 18</p>
+            <p>Mọi thắc mắc, thông tin xin liên hệ qua mail: huygon764@gmail.com</p>
+        </div>
+    </div>
+</body>
+
+</html>

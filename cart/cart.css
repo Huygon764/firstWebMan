@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+}
+/*header */
+.header {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.frm_header {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-left: auto;
+}
+.frm_header input {
+    width: 300px;
+    border: none;
+    outline: none;
+}
+.frm_header button {
+    border:none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: none;
+}
+.frm_header button:hover {
+    opacity: 0.3;
+}
+#icon_light {
+    font-size: 20px;
+    margin-left: 10px;
+    cursor:pointer;
+}
+.icon_cart {
+    color: black;
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.log_in {
+    background-color: rgb(49, 196, 141);
+    border-radius: 50px;
+}
+.log_in a {
+    display:block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+/* navigation */
+.nav {
+    width: 100%;
+    padding: 0 10%;
+    background-color: #282A35;
+}
+.menu li {
+    display: inline-block;
+    cursor: pointer;
+    border-right: 1px solid rgb(255, 255, 255, 0.5);
+    margin-left: -4px;
+}
+.menu li a {
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+    padding: 12px 15px 13px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.category {
+    position: relative;
+}
+.sub_category {
+    position: absolute;
+    left: 0;
+    display: none;
+}
+.menu li .sub_category a {
+    background-color: #282A35;
+    padding: 5px 10px;
+    line-height: 25px;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+.menu li:hover {
+    background-color: black;
+}
+.menu li:hover .sub_category {
+    display: block;
+}
+.menu li .sub_category a:hover {
+    background-color: black;
+}
+/* wrapper of content */
+.container_main {
+    width: 100%;
+    padding: 0 10vw;
+    background-color: #e4e4e4;
+}
+/* content */
+.content {
+    background-color: white;
+    padding: 20px 15px;
+    margin: 0 auto;
+    min-height: 75vh;
+}
+.home a{
+    color: #2980b9;
+    text-decoration: none;
+    font-size: 18px;
+}
+#arrow::before {
+    content: "\00BB";
+    padding: 0 5px;
+    color: #E4E4E4;
+}
+.home a:hover {
+    text-decoration: underline;
+    color: #ae4ad9;
+}
+/* cart */
+.sample_product {
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    display:flex;
+    margin-top: 20px;
+    text-align: center;
+}
+.product {
+    width: 50%;
+    text-align: left;
+}
+.price {
+    width: 15%;
+}
+.quantity {
+    width: 15%;
+}
+.sum {
+    width: 20%;
+}
+
+.product_added {
+    margin-top: 10px;
+    border: 1px solid black;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.product_added img{
+    width: 70px;
+    height: 85px;
+}
+
+.product1 {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #E4E4E4;
+}
+.product_real {
+    width: 50%;
+    display: flex;
+    text-align: left;
+}
+.content_man {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.name_cart{
+    text-decoration: none;
+    color: black;
+}
+.product_real .describeMan {
+    margin-top: 30px;
+    padding-right: 40px;
+}
+.price_real {
+    width: 15%;
+}
+.quantity_real {
+    width: 15%;
+}
+.quantity_changable {
+    border: 1px solid black;
+    padding: 3px;
+}
+.quantity_real button {
+    padding: 3px;
+}
+.sum_real {
+    width: 20%;
+}
+.order {
+    margin-top: 10px;
+    font-size: 20px;
+    padding-left: 15px;
+    text-align: left;
+}
+.order button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 30px;
+    background-color: rgb(49, 196, 141);
+    cursor: pointer;
+    margin-left: 80%;
+}
+.order .count_sum {
+    margin-left: 0;
+    text-align: left;
+}
+/* footer */
+.footer {
+    width: 100%;
+    background-color: #222222;
+    color: white;
+    padding: 10px 10%;
+    text-align: center;
+}
+
+/* darkmode */
+.dark {
+    background-color: #252525;
+}
+
+.white {
+    color: white;
+}
+.background_content {
+    background-color: #1a1a1a;
+}
+.background_nav {
+    background-color: #222222;
+}
+.border_white {
+    border: 1px solid white;
+}
